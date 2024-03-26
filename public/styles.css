@@ -9,5 +9,6 @@ canvas {
 }
 
 embed {
+  min-height: auto;
   width: 100%;
 }
