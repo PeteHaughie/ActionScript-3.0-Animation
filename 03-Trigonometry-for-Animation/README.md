@@ -82,3 +82,25 @@ var radians = Math.atan2(dy, dx);
 ### P5
 
 The way graphics are created in P5 is a bit unique to the library which is echoed in the class. Generating the actual arrow is very similar to the Vanilla and AS3 method but uses points or vertexes instead of lines between points. I quite like the TURTLE style of drawing shapes because it reminds me of drawing on the BBC.
+
+## 02: Waves
+
+### Original code:
+
+```as3
+for(var angle:Number = 0; angle < Math.PI * 2; angle += 0.1>) {
+  trace(Math.sin(angle));
+}
+```
+
+## Notes:
+
+There was a fair bit of extra code just to get the scaling correct on both canvases.
+
+### Vanilla
+
+Nothing of much to note initially.
+
+### P5
+
+It took me by surprise that the coordinate system was reversed on the y axis which I wouldn't have noticed until I saw the sine was inverted.
