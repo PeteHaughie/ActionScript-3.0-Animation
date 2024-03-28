@@ -80,3 +80,5 @@ var radians = Math.atan2(dy, dx);
 ```
 
 ### P5
+
+The way graphics are created in P5 is a bit unique to the library which is echoed in the class. Generating the actual arrow is very similar to the Vanilla and AS3 method but uses points or vertexes instead of lines between points. I quite like the TURTLE style of drawing shapes because it reminds me of drawing on the BBC.
