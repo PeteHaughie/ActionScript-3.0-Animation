@@ -8,6 +8,9 @@ I picked this book up for next to nothing from Abe Books and decided to reimplem
 
 Contained in this repository is the result of that process.
 
+##  TODO:
+Find a way of easily building and deploying the demo site via Github pages. By default Vite, my preferred localhost development environment, doesn't easily transfer. Will look into build actions and so forth. Nobody needs to get into Jekyll for something so dumb as this.
+
 ## Technologies
 
 - Canvas (2D)
