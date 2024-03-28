@@ -1,5 +1,5 @@
 class CanvasCreator {
-  constructor(width, height) {
+  constructor(width = 300, height = 300) {
     this.width = width;
     this.height = height;
     this.canvas = document.createElement('canvas');

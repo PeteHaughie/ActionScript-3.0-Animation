@@ -9,6 +9,7 @@ I picked this book up for next to nothing from Abe Books and decided to reimplem
 Contained in this repository is the result of that process.
 
 ##  TODO:
+
 Find a way of easily building and deploying the demo site via Github pages. By default Vite, my preferred localhost development environment, doesn't easily transfer. Will look into build actions and so forth. Nobody needs to get into Jekyll for something so dumb as this.
 
 ## Technologies
@@ -18,6 +19,10 @@ Find a way of easily building and deploying the demo site via Github pages. By d
 - Pixi.js (2D)
 - Three.js (3D)
 - A-Frame.js (3D/XR)
+
+## Code Examples
+
+All original ActionScript code examples are labelled as as3 in the markdown for syntax highlighting reasons in the hope that the Rouge library that Kramdown uses which is in turn used by Github picks it up.
 
 ## A Note on Co-ordinate Systems
 

@@ -1,20 +1,10 @@
 import { CanvasCreator, deg2rad } from "../00-Misc/utilities.js";
+import CreateArrow from "../00-Misc/arrow.js";
 
-const canvas = new CanvasCreator(800, 600).createCanvas();
+const canvas = new CanvasCreator().createCanvas();
 const ctx = canvas.getContext('2d');
 
-const arrow = new Path2D();
-      arrow.moveTo(-50, -25);
-      arrow.lineTo(0, -25);
-      arrow.lineTo(0, -50);
-      arrow.lineTo(50, 0);
-      arrow.lineTo(0, 50);
-      arrow.lineTo(0, 25);
-      arrow.lineTo(-50, 25);
-      arrow.lineTo(-50, -25);
-      arrow.closePath();
-      arrow.fillStyle = 'black';
-
+const arrow = new CreateArrow().getArrow();
 
 let radians = 0;
 let degrees = 0;
