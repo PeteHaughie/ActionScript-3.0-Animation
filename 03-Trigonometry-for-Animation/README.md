@@ -70,14 +70,9 @@ package {
 
 I was genuinely surprised how close to the flash and canvas path versions of the arrow were. Almost copy and paste.
 
-The book offers two solutions to determining the angle between the arrow and the user cursor position but only one, atan2, worked correctly for me. The other caused the arrow to flip horizontally and vertically if the calculated mouse position was negative. I can only presume that this is due to the nature of the coordinate matrix differing between Flash and JS.
+The book offers two solutions to determining the angle between the arrow and the user cursor position but only one, atan2, worked correctly for me. The other caused the arrow to flip horizontally and vertically if the calculated mouse position was negative. This is mentioned in the book and I would have saved myself hours of headache if I had bothered to read the next page.
 
 ```as3
 var radians = Math.atan(dy / dx);
-```
-
-and
-
-```as3
 var radians = Math.atan2(dy, dx);
 ```
