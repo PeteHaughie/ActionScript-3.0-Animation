@@ -1,8 +1,25 @@
 import { CanvasCreator, deg2rad } from "../00-Misc/utilities.js";
-import CreateArrow from "../00-Misc/arrow.js";
 
 const canvas = new CanvasCreator().createCanvas();
 const ctx = canvas.getContext('2d');
+
+class CreateArrow {
+  constructor() {
+    this.arrow = new Path2D();
+    this.arrow.moveTo(-50, -25);
+    this.arrow.lineTo(0, -25);
+    this.arrow.lineTo(0, -50);
+    this.arrow.lineTo(50, 0);
+    this.arrow.lineTo(0, 50);
+    this.arrow.lineTo(0, 25);
+    this.arrow.lineTo(-50, 25);
+    this.arrow.lineTo(-50, -25);
+    this.arrow.closePath();
+  }
+  getArrow() {
+    return this.arrow;
+  }
+}
 
 const arrow = new CreateArrow().getArrow();
 
@@ -13,6 +30,9 @@ let arrowBoundingRect = 0;
 // draw the arrow to the canvas when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
   ctx.translate(ctx.canvas.width / 2, ctx.canvas.height / 2);
+  ctx.fillStyle = '#ffff00';
+  ctx.strokeStyle = '#000000';
+  ctx.stroke(arrow);
   ctx.fill(arrow);
 });
 
@@ -47,6 +67,9 @@ function handleMousePosition(event) {
   ctx.save();
   ctx.translate(0, 0);
   ctx.rotate(degrees);
+  ctx.fillStyle = '#ffff00';
+  ctx.strokeStyle = '#000000';
+  ctx.stroke(arrow);
   ctx.fill(arrow);
   ctx.restore();
 }
