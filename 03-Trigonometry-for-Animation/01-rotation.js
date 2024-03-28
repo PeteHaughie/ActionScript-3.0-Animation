@@ -1,5 +1,4 @@
-import CanvasCreator from "../00-Misc/canvas.js";
-import { deg2rad, rad2deg } from "../00-Misc/utilities.js";
+import { CanvasCreator, deg2rad } from "../00-Misc/utilities.js";
 
 const canvas = new CanvasCreator(800, 600).createCanvas();
 const ctx = canvas.getContext('2d');
