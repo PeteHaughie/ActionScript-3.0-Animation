@@ -1,5 +1,5 @@
-function deg2grad(deg) {
-    return deg * Math.PI / 180;
+function deg2rad(deg) {
+    return (deg * Math.PI) / 180;
 }
 
-export default deg2grad;
+export default deg2rad;
